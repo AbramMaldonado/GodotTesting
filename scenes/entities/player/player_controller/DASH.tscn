@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://vuamemtan7da"]
+
+[ext_resource type="Script" path="res://scenes/entities/player/player_controller/DASH.gd" id="1_m1824"]
+
+[node name="DASH" type="Node"]
+script = ExtResource("1_m1824")
+
+[node name="Dash_Duration" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Dash_Duration" to="." method="_on_timer_timeout"]

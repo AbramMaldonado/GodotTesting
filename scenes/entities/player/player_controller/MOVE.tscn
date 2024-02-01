@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnga1whtum1yb"]
+
+[ext_resource type="Script" path="res://scenes/entities/player/player_controller/MOVE.gd" id="1_v1hjj"]
+
+[node name="MOVE" type="Node"]
+script = ExtResource("1_v1hjj")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddx88wjad4sqh"]
+
+[ext_resource type="PackedScene" uid="uid://d12q2ewehn2b3" path="res://scenes/entities/player/Player.tscn" id="2_dguna"]
+[ext_resource type="PackedScene" uid="uid://bgdgvlvsups1o" path="res://scenes/entities/world/FLOOR.tscn" id="2_ek4a2"]
+
+[node name="World" type="Node2D"]
+position = Vector2(-176, 28)
+
+[node name="Player" parent="." instance=ExtResource("2_dguna")]
+position = Vector2(42, -90)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_ek4a2")]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_ek4a2")]
+position = Vector2(306, -311)
+rotation = 1.5708
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_ek4a2")]
+position = Vector2(-107, -141)
