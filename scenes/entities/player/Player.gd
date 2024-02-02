@@ -19,6 +19,7 @@ var dash_input = false
 #MECHANICS
 var can_dash = true
 var can_jump = true
+var stamina = 50
 
 #STATE MANAGMENT
 var current_state = null
@@ -26,7 +27,7 @@ var prev_state = null
 
 #NODES
 @onready var STATES = $STATES
-@onready var Raycasts = $Raycasts
+@onready var Raycasts = $Raycasts 
 
 func _ready(): 
 	for state in STATES.get_children():
